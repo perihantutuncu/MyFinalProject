@@ -38,7 +38,7 @@ namespace Business.Concrete
         {
             IResult result = BusinessRules.Run(ChectkIfProductNameExists(product.ProductName),
                 ChectkIfProductCountOfCategoryCorrect(product.CategoryId), CheckIfCategoryLimitExceded());
-           
+
             if (result != null)
             {
                 return result;
